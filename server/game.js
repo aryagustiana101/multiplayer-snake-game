@@ -24,7 +24,7 @@ const createGameState = () => {
           y: 5,
         },
         velocity: {
-          x: 0,
+          x: 1,
           y: 0,
         },
         snake: [
