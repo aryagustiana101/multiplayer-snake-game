@@ -1,0 +1,14 @@
+{
+  "name": "server",
+  "dependencies": {
+    "socket.io": "^4.5.1"
+  },
+  "main": "server.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./constants": "./constants.js",
+    "./game": "./game.js",
+    "./utilities": "./utilities.js"
+  }
+}

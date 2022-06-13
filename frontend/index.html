@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Multiplayer Snake Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <section class="vh-100">
+      <div class="container h-100">
+        <div id="initial-screen" class="h-100">
+          <div class="d-flex flex-column align-items-center justify-content-center h-100">
+            <h1 class="mb-3">Multiplayer Snake</h1>
+            <button type="submit" class="btn btn-success" id="new-game-button">Create New Game</button>
+            <div class="my-4">OR</div>
+            <div class="mb-3">
+              <input type="text" placeholder="Enter Game Code" id="game-code-input" />
+            </div>
+            <button type="submit" class="btn btn-success" id="join-game-button">Join Game</button>
+          </div>
+        </div>
+
+        <div id="game-screen" class="h-100 d-none">
+          <div class="d-flex flex-column align-items-center justify-content-center h-100">
+            <h1 id="game-code-display-wrapper">Your Game Code: <span id="game-code-display"></span></h1>
+            <canvas id="canvas"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
