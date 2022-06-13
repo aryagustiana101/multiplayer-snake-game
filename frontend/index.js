@@ -3,7 +3,7 @@ const PLAYER_ONE_COLOR = "red";
 const PLAYER_TWO_COLOR = "blue";
 const FOOD_COLOR = "#e66916";
 
-const socket = io.connect("http://localhost:3000");
+const socket = io.connect("https://sleepy-cliffs-32051.herokuapp.com");
 
 socket.on("init", handleInit);
 socket.on("gameState", handleGameState);
